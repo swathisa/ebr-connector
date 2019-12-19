@@ -1,0 +1,269 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ebr-connector &mdash; ebr-connector 0.1.6-dev documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="ebr-connector documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ebr-connector
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.6-dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Readme</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#terms">Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#test-and-suite-separation">Test and Suite Separation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#schema-conventions">Schema conventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#credits">Credits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ebr-connector</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>ebr-connector</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ebr-connector">
+<h1>ebr-connector<a class="headerlink" href="#ebr-connector" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://dev.azure.com/tomtomweb/GitHub-TomTom-International/_build/latest?definitionId=19&amp;branchName=master"><img alt="Azure DevOps builds" src="https://img.shields.io/azure-devops/build/tomtomweb/GitHub-TomTom-International/19/master.svg" /></a>
+<a class="reference external image-reference" href="https://dev.azure.com/tomtomweb/GitHub-TomTom-International/_build/latest?definitionId=19&amp;branchName=master"><img alt="Azure DevOps tests" src="https://img.shields.io/azure-devops/tests/tomtomweb/GitHub-TomTom-International/19/master.svg" /></a>
+<a class="reference external image-reference" href="https://dev.azure.com/tomtomweb/GitHub-TomTom-International/_build/latest?definitionId=19&amp;branchName=master"><img alt="Azure DevOps coverage" src="https://img.shields.io/azure-devops/coverage/tomtomweb/GitHub-TomTom-International/19/master.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.org/project/ebr-connector/"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/ebr-connector.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.org/project/ebr-connector/"><img alt="PyPI - License" src="https://img.shields.io/pypi/l/ebr-connector.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.org/project/ebr-connector/"><img alt="PyPI - Python Versions" src="https://img.shields.io/pypi/pyversions/ebr-connector.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.org/project/ebr-connector/"><img alt="PyPI - Format" src="https://img.shields.io/pypi/format/ebr-connector.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.org/project/ebr-connector/"><img alt="PyPI - Status" src="https://img.shields.io/pypi/status/ebr-connector.svg" /></a>
+<a class="reference external image-reference" href="https://pyup.io/repos/github/tomtom-international/ebr-connector/"><img alt="PyUp - Updates" src="https://pyup.io/repos/github/tomtom-international/ebr-connector/shield.svg" /></a>
+<p>Simple Python package to define a schema for build and test results to be stored in Elasticsearch</p>
+<div class="section" id="terms">
+<h2>Terms<a class="headerlink" href="#terms" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Build</strong>: A single instance of a CI systems build/test execution. It should map to a single URL/URI/UID on a CI system.</p></li>
+<li><p><strong>Build ID</strong>: The ID associated with a given <em>build</em> (eg. <em>1078929</em>).</p></li>
+<li><p><strong>Job</strong>: A collection of tasks that describe how a <em>build</em> should be run. Running a <em>job</em> should result in a <em>build</em>. In Jenkins this maps to a job/project,
+in Quickbuild this maps to a configuration (eg. <em>cpp-tests</em>, <em>root/prod/main</em>).</p></li>
+<li><p><strong>Product</strong>: Name of product that a given build is associated with.</p></li>
+<li><p><strong>Test Case</strong>: Individual tests (sometimes aggregrations of closely related tests in C++) with result information</p></li>
+<li><p><strong>Test Set</strong>: An aggregated collection of test cases, i.e. a suite</p></li>
+</ul>
+</div>
+<div class="section" id="test-and-suite-separation">
+<h2>Test and Suite Separation<a class="headerlink" href="#test-and-suite-separation" title="Permalink to this headline">¶</a></h2>
+<p>Tests and suites have been separated into two arrays rather than having tests nested with suites in this schema in order to better support Grafana
+(which has limitations on accessing nested information in ElasticSearch).</p>
+<p>Since the build results are stored in one document it is not possible to filter out for example failing test cases only. It is possible to filter build result
+documents with failing tests only but the response received will as well contain the successful test cases.</p>
+<p>In order to reduce the amount of received data tests have been therefore separated into passed, failed and skipped arrays.</p>
+</div>
+<div class="section" id="schema-conventions">
+<h2>Schema conventions<a class="headerlink" href="#schema-conventions" title="Permalink to this headline">¶</a></h2>
+<p>Due to the usage of nested types in the schema the Elasticsearch indexer needs to be informed about this. This is achieved by defining a so called <a class="reference external" href="https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-templates.html">index
+template</a>.</p>
+<p>To avoid modifiying the index template whenever the schema is modified we decided to use
+<a class="reference external" href="https://www.elastic.co/guide/en/elasticsearch/reference/current/dynamic-templates.html">dynamic templates</a> to map the types dynamically
+based on the following rules (applied in this order):</p>
+<ul class="simple">
+<li><p>Each field has to be prefixed with <code class="docutils literal notranslate"><span class="pre">br_</span></code></p></li>
+<li><p>Fields that should be not available for full text search (<em>keyword</em>) are suffixed with <code class="docutils literal notranslate"><span class="pre">_key</span></code> and will be mapped to type <em>keyword</em>.</p></li>
+<li><p>Fields that are nested are suffixed with <code class="docutils literal notranslate"><span class="pre">_nested</span></code> and will be mapped to type <em>nested</em>.</p></li>
+<li><p>Fields that are counters are suffixed with <code class="docutils literal notranslate"><span class="pre">_count</span></code> and will be mapped to type <em>integer</em>.</p></li>
+<li><p>Fields containing <code class="docutils literal notranslate"><span class="pre">duration</span></code> in their name will be mapped to type <em>float</em>.</p></li>
+<li><p>Fields of type <em>string</em> get a raw field (except they are suffixed with <code class="docutils literal notranslate"><span class="pre">_key</span></code>) that can be used for non-full-text-searches and are limited to 256 characters.</p></li>
+</ul>
+</div>
+<div class="section" id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<p>This package was created with <a class="reference external" href="https://github.com/audreyr/cookiecutter">Cookiecutter</a> and the <a class="reference external" href="https://github.com/tomtom-international/cookiecutter-python">tomtom-international/cookiecutter-python</a> project template.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="ebr-connector documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, TomTom
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
